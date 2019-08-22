@@ -1,0 +1,156 @@
+* {padding:0; margin:0;}
+html, body {height:100%;}
+body {color:#000; font:normal 13px Helvetica,Arial,sans-serif, Century Gothic;}
+a, img {border:none;}
+#page {min-height:100%; width:950px; display:block; margin:auto; margin-bottom:-101px; position:relative; background:#fff; -webkit-box-shadow:0px 0px 60px 5px rgba(0,0,0,0.75); -moz-box-shadow:0px 0px 60px 5px rgba(0,0,0,0.75); box-shadow:0px 0px 60px 5px rgba(0,0,0,0.75);}
+#wrap {min-height:100%;}
+#main {overflow:auto; padding-bottom:80px; /* must be same height as the footer */}
+#footer {width:950px; height:80; padding:10px 0; position:relative; margin:auto; margin-top:-101px; display:block; clear:both; font-size:1em; border:0; color:#fff; background:#265a76; z-index:99; text-align:center;}
+body:before {content:""; height:100%; float:left; width:0; margin-top:-32767px; /} /*Opera Fix*/
+#footer img {display:inline; margin-bottom:10px;} /* Fin sticky footer*/
+.footAddress {width:100%; display:inline-block}
+.banner {display:block; width:100%; height:186px; background:url('../img/header.jpg') no-repeat; background-size:100% 186px;}
+#header {width:950px; height:186px; margin:auto; display:block; clear:both; text-align:center !important;}
+#logo {width:411px; height:147px; background:url('../img/logo_empresa.png') no-repeat; display:inline-block; margin-top:20px; /*margin-left:40px; *//*float:left; */}
+/*#logo2 {width:267px; height:44px; background:url('../img/medical_group.png') no-repeat; display:block; margin-top:80px; margin-right:40px; float:right;}*/
+a, a:link, a:visited {color:#005C7D; text-decoration:none;}
+p.justify {text-align:justify; text-justify:inter-word;}
+hr {border:0px; border-top:1px solid #a8a8a8;}
+hr.separador {width:98%; display:block; clear:both; margin:20px auto;}
+.f10 {font-size:0.5em !important;}
+
+h2 {font-size:2em;}
+h3 {font-size:1.8em;}
+h4 {font-size:1.4em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em;}
+ul.lista li {margin-left:20px; text-align:justify;}
+.strong {font-weight:bold;}
+.enfasis {color:#265a76; display:inline-block;}
+.invisible, .hidden {display:none;}
+.bgFix {width:100%; height:100%; display:block; background:url('../img/fondos/1280x1024.jpg') center center no-repeat fixed; position:fixed; top:0px; left:0px; z-index:-1; background-size:100%; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;}
+/*@media all and (min-width:800px) and (max-width:1280px) {.bgFix {background-image:url('../img/fondos/1280x890.jpg');}}
+@media all and (min-width:1280px) and (max-width:1400px) {.bgFix {background-image:url('../img/fondos/1400x900.jpg');}}
+@media all and (min-width:1400px) and (max-width:1600px) {.bgFix {background-image:url('../img/fondos/1600x1200.jpg');}}*/
+span.times {color:#808080; font-size:18px; font-weight:bold;}
+sup.marca-registrada {font-size:8px !important;}
+
+#mainContent {background:#fff;}
+#content {padding:20px; min-height:300px;}
+
+div#mainMenu {background-color:#265a76; height:41px; text-align:center;}
+div#mainMenu > ul {list-style:none; width:100%; height:100%; margin:0; padding:0; background-color:#265a76; display:inline; text-align:left;}
+
+div#mainMenu > ul > li {display:inline-block; position:relative; font-size:13px; line-height:13px; margin:-2px;}
+div#mainMenu ul li.active {background:#132d3a;}
+
+div#mainMenu > ul > li.filler {height:100%; max-height:1000px;}
+div#mainMenu ul li a {color:#fff; text-decoration:none; display:block; padding:15px 40px;}
+div#mainMenu ul li.active a {color:#bad8de;}
+div#mainMenu ul li a:hover {background-color:#132d3a; color:#bad8de;}
+
+div#mainMenu ul li ul {color:#fff; background-color:#005C7D; position:absolute; width:200px; z-index:999; display:none;}
+div#mainMenu ul li:hover ul {display:block;}
+div#mainMenu ul li ul li a {min-width:170px;}
+div#mainMenu ul li ul li {width:200px; white-space:normal; list-style:none; font-size:0.8em; line-height:1em;}
+div#mainMenu ul li ul li a {padding:8px 10px;}
+
+div.horizontalCenter {width:100%; height:auto; display:block; vertical-align:middle; text-align:center; margin:auto;}
+
+.span50 {width:48%; display:block;}
+.span100 {width:100; display:block;}
+.go-left {float:left; padding-right:10px;}
+.go-right {float:right; padding-left:10px;}
+.go-center {width:100%; display:block; clear:both; margin-top:10px; padding:0;}
+
+.noSlct {-webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; cursor:default;}
+
+/* forms */
+.hint {font-style:italic; color:#6b6b6b;}
+span.required {color:#dd0000;}
+.light-error {color:#f25252;}
+
+label {font-weight:bold; font-size:1.2em; text-transform:uppercase;}
+input[type=text]:hover, textarea:hover, input[type=text]:focus, textarea:focus {border:1px solid #265A76;}
+input[type=text], textarea {padding:4px; width:90%; max-width:98%; border:1px solid #bad8de;}
+input[type=submit] {padding:10px 20px; background:#265A76; color:#fff; border:0;}
+input[type=submit]:hover {background:#132d3a; color:#bad8de; cursor:pointer;}
+.refresh-captcha {width:30px; height:30px; margin-bottom:9px;}
+.refresh-captcha:hover {opacity:0.7;}
+.alert {width:100%; color:#fff; display:block; font-size:0.9em; margin-bottom:20px;}
+.alert span {padding:10px; display:block;}
+.alert button {width:auto; height:auto; display:block; margin:5px 10px; border:transparent; background:transparent; color:#999; float:right; cursor:pointer; font-size:1.8em;}
+.alert button:hover {color:#000;} 
+.alert-error {background:#FBC2C4; color:#8a1f11;}
+.alert-alerta {background:#FFF6BF; color:#514721;}
+.alert-exito {background:#E6EFC2; color:#264409;}
+.alert-informacion {background:#D5E5FF; color:#00006B;}
+
+/* index */
+.nav {display:block; width:100%; height:15px; text-align:center; padding-top:20px; background:none;}
+.nav span {width:15px; height:15px; display:inline-block; color:transparent; margin:0 3px; background:#dadada; -webkit-border-radius:10px; -khtml-border-radius:10px; -moz-border-radius:10px; border-radius:10px;}
+.nav span:hover, .nav span.cycle-pager-active {background:#265A76; cursor:pointer;}
+.nav li {list-style-type:none; display:inline;}
+
+div[class^='rotardor-'] {overflow:hidden;}
+
+.rotador-principal, .rotador-principal img {width:100%; height:auto; overflow:hidden;}
+.contenedor-pasos {width:100%; height:auto; display:inline-table; clear:both; text-align:justify;}
+.contenedor-pasos div[class^='paso-'] {width:294px; height:auto; display:block; float:left;}
+.contenedor-pasos div.paso-2 {margin:0 13px;}
+.paso-opaco {position:relative; display:block;}
+.contenedor-pasos img {width:294px; height:166px; margin-bottom:7px; display:block; position:relative; top:0; left:0; z-index:10;}
+.paso-opaco .sombra {width:294px; height:166px; background:rgba(38, 90, 118,0.5); position:absolute; top:0; left:0; z-index:20;}
+.paso-opaco:hover .sombra {background:none; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; -o-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+.empresas {text-align:center; margin-bottom:40px;}
+.empresas img {display:inline-block;}
+.empresas img:nth-child(2) {margin:0 30px;}
+
+/* empresa */
+.img-empresa {max-width:100%; height:auto; display:table-cell; margin-bottom:20px;}
+
+/* servicios */
+h1.servicio {font-size:1.8em;}
+.img-servicios {display:block; margin-bottom:20px;}
+.img-servicios img {width:49%; height:auto; display:block; margin-bottom:8px;}
+.img-servicios img:nth-child(even) {float:right;}
+.img-servicios img:nth-child(odd) {float:left;}
+
+.MultiFile-wrap, .appForm tr td:nth-child(2) div {display:block; margin-bottom:5px;}
+.MultiFile-list {display:block !important; clear:both;}
+.MultiFile-title {display:block; width:30% !important;}
+.MultiFile-label {width:100% !important; height:auto; display:inline-block; float:left; clear:both;}
+.MultiFile-label a {display:inline-block; width:18px; height:35px; line-height:35px; margin-top:0; vertical-align:top;}
+.MultiFile-label span:not(.times) {width:25%; height:35px; line-height:35px; display:inline-block; margin-top:0 !important; margin-right:5px; overflow:hidden; white-space:nowrap;}
+.MultiFile-label input {width:30% !important; height:35px; line-height:35px; display:inline-block; margin-top:0 !important; border:0px; color:#bad8de; padding:0px 7px !important; vertical-align:top;}
+
+div.file-upload .iconUpload {position:absolute; top:8px;}
+div.file-upload {width:100px !important; height:35px; background:#265A76; display:inline-block !important; color:#fff; position:relative; padding-left:5px;}
+div.file-upload input {position:absolute; background:transparent; width:77px !important; padding:9px 0 7px 25px !important; top:-2px; left:0; white-space:nowrap; overflow:hidden; display:block; cursor:pointer; font-size:13px !important;}
+div.file-upload input {color:#fff;}
+div.file-upload input:before {content:"Subir archivo";}
+div.file-upload:hover input {color:#bad8de;}
+
+.icon16 {width:16px; height:16px; display:inline-block; margin-right:1px; background:url('../img/icon16.png') no-repeat;}
+.iconUpload {background:url('../img/icon16.png') no-repeat;}
+.icon16.iconUpload {background-position:0 0;}
+div.file-upload:hover .icon16.iconUpload {background-position:-16px 0;}
+div.file-upload:hover {background:#132D3A;}
+
+/* contacto */
+h1.title {font-size:1.8em;}
+.img-contacto {display:table-cell; text-align:center;}
+.img-contacto img {width:436px; height:auto; clear:both; display:inline-block;}
+table.datos-contacto td {padding:10px; font-weight:bold; font-size:1.2em;}
+table.datos-contacto td div {width:35px; height:35px; display:inline-block; background-color:red; background:url('../img/icons.png') no-repeat;}
+table.datos-contacto td div.contacto-direccion {background-position:0 -70px;}
+table.datos-contacto td div.contacto-telefonos {background-position:0 0;}
+table.datos-contacto td div.contacto-twitter {background-position:0 -35px;}
+table.datos-contacto tr:hover div {opacity:0.7;}
+
+/* productos */
+h1.title {font-size:2em;}
+.span50 .img-producto {max-width:436px; margin:0 auto; display:block;}
+.go-center .img-producto {max-width:900px; display:block; margin:auto;}
+.span50 p {text-align:justify;}
+.go-right h4 {color:#005C7D; text-align:center;}
